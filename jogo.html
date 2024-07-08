@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+button img {
+    width: 50px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.titulo span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.pontuacao p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.pontuacao span {
+    font-weight: 600;
+}
+
+.armas button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.detalhes p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.redes-sociais {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.perdeu{
+    background-color: #ffdde0;
+    color: #d32f2f"
+}
+
+.empatou{
+    background-color: #e5e5e5; 
+    color: #808080
+}
+
+.ganhou{
+    background-color: #cefdce;
+    color: #689f38
+}
+
+.imagensResultado{
+    display: flex; 
+    flex-direction: row;
+}
+
+.imagensResultado div{
+    min-width: 50%;
+    margin: 5px;
+}
+
+.imagensResultado img{
+    width: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <h1>JOKEMPO</h1>
+    </div>
+    <div class="container">
+        <div class="pontuacao">
+            <p>Computador : 
+                <span id="pontosComputador">0</span>
+            </p>
+            <p>
+                Você :
+                <span id="pontosUsuario">0</span>
+            </p>
+        </div>
+        <div class="escolhas">
+            <h3>Faça sua escolha</h3>
+            <button >
+               <img src="/image/pedra.png"alt="" onclick="escolherJogada()">
+            </button>
+            <button >
+                <img src="/image/papel.png" alt="" onclick="escolherJogada()">
+            </button>
+            <button >
+                <img src="/image/tesoura.png" alt="" onclick="escolherJogada()">
+            </button>
+        </div>
+        <div class="detalhes">
+            <div class="imagensResultado">
+                 <div >
+                    <p id="escolhaUsuario" > </p>
+                    <img id="imgUser" src="" alt="">
+                </div>
+                <div>
+                    <p id="escolhaComputador" > </p>
+                    <img id="imgComput" src="" alt="">
+                </div>
+            </div>
+        
+            <p id="resultado"></p>
+        </div>
+    </div>
+    <ul class="redes-sociais">
+        <li><a href=#> </a></li>
+        <li><a href=#> </a></li>
+        <li><a href=#> </a></li>
+    </ul>
+    <!--Script-->
+    <script src="/jogo.js"></script> 
+</body>
+</html>
